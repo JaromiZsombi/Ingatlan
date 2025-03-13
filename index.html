@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config={
+            darkMode: 'class'
+        }
+    </script>
+    <script src="getData.js"></script>
+    <script src="Main.js" defer></script>
+    <script src="getUniqueValues.js"></script>
+    <title>Ingatlanok</title>
+</head>
+<body class="dark">
+    
+<div class="max-w-[1200px] min-h-screen mx-auto border border-gray-300 dark:bg-slate-600">
+
+    <h1 class="text-3xl font-bold underline text-center p-2 dark:text-white">Ingatlan Eladó</h1>
+    <main class="flex justify-center flex-col items-center">
+        <ul class="flex flex-wrap justify-center items-center text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+        </ul>
+
+    </main>
+	<div class="cards flex flex-wrap gap-3 justify-center"></div>
+</div>
+
+</body>
+</html>
